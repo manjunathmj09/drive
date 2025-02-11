@@ -21,8 +21,16 @@ router.post(
         .status(400)
         .json({ errors: errors.array(), message: "Invalid data" });
     }
-
+    
     const { email, username, password } = req.body;
+
+    const existingUser = await userModel.findOne({
+      $or: [{ email }, { username }],
+    });
+
+    if (existingUser) {
+      return res.status(400).json({ message: "User with this email or username already exists" });
+    }
     const hashPassword = await bcrypt.hash(password, 10);
     const newUser = await userModel.create({
       email,
@@ -30,7 +38,7 @@ router.post(
       password: hashPassword,
     });
 
-    res.json(newUser);
+    res.redirect("/user/login");
   }
 );
 
