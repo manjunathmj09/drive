@@ -33,6 +33,19 @@ app.use(
 //     );
 //     next();
 //   });
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            defaultSrc: ["'self'"],
+            fontSrc: ["'self'", "https://fonts.gstatic.com"],
+            styleSrc: ["'self'", "https://fonts.googleapis.com"],
+            scriptSrc: ["'self'"],
+            imgSrc: ["'self'"],
+            connectSrc: ["'self'"],
+            // Add other directives as needed
+        },
+    },
+}));
 app.use("/", indexRouter);
 app.use("/user", userRouter);
 app.listen(port, '0.0.0.0', () => {
