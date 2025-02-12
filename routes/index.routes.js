@@ -8,7 +8,6 @@ const authMiddleware = require("../middleware/auth.js");
 router.get("/", authMiddleware, async (req, res) => {
   try {
     const userFiles = await fileModel.find({ user: req.user.userId });
-
     res.render("home", { files: userFiles });
   } catch (error) {
     console.error("Error fetching user files:", error);
@@ -57,7 +56,7 @@ router.post(
         .from(process.env.SUPABASE_BUCKET)
         .getPublicUrl(fileName);
 
-      res.redirect("/home");
+      res.redirect("/");
     } catch (error) {
       console.error("Upload error:", error);
       res.status(500).json({ error: error.message });
