@@ -1,4 +1,5 @@
 const express = require("express");
+const helmet = require("helmet");
 const dotenv = require("dotenv");
 dotenv.config();
 const connectToDB = require("./config/db.js");
@@ -15,6 +16,17 @@ app.set("view engine", "ejs");
 app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+            defaultSrc: ["'self'"],
+            fontSrc: ["'self'", "https://fonts.gstatic.com"],
+            styleSrc: ["'self'", "https://fonts.googleapis.com"],
+            // Add other directives as needed
+        },
+    },
+}));
 
 app.use("/", indexRouter);
 app.use("/user", userRouter);
