@@ -26,13 +26,13 @@ app.use(
       },
     })
   );
-  app.use((req, res, next) => {
-    res.setHeader(
-      "Content-Security-Policy",
-      "default-src 'self'; font-src 'self' https://fonts.gstatic.com;"
-    );
-    next();
-  });
+//   app.use((req, res, next) => {
+//     res.setHeader(
+//       "Content-Security-Policy",
+//       "default-src 'self'; font-src 'self' https://fonts.gstatic.com;"
+//     );
+//     next();
+//   });
 app.use("/", indexRouter);
 app.use("/user", userRouter);
 app.listen(port, '0.0.0.0', () => {
