@@ -17,16 +17,15 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(helmet({
-    contentSecurityPolicy: {
-        directives: {
-            defaultSrc: ["'self'"],
-            fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            styleSrc: ["'self'", "https://fonts.googleapis.com"],
-            // Add other directives as needed
-        },
-    },
-}));
+app.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        defaultSrc: ["'self'"],
+        fontSrc: ["'self'", 'https://fonts.gstatic.com'],
+        // Add other directives as needed
+      },
+    })
+  );
 
 app.use("/", indexRouter);
 app.use("/user", userRouter);
