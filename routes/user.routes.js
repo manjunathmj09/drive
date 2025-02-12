@@ -21,7 +21,7 @@ router.post(
         .status(400)
         .json({ errors: errors.array(), message: "Invalid data" });
     }
-    
+
     const { email, username, password } = req.body;
 
     const existingUser = await userModel.findOne({
@@ -81,7 +81,7 @@ router.post(
     );
 
     res.cookie("token", token, { httpOnly: true, secure: true });
-    res.redirect("/home");
+    res.redirect("/");
   }
 );
 

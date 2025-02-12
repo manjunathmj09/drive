@@ -1,4 +1,5 @@
 const express = require("express");
+const router = express.Router();
 const helmet = require("helmet");
 const dotenv = require("dotenv");
 dotenv.config();
@@ -17,37 +18,12 @@ app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use(
-    helmet.contentSecurityPolicy({
-      directives: {
-        defaultSrc: ["'self'"],
-        fontSrc: ["'self'", 'https://fonts.gstatic.com'],
-        // Add other directives as needed
-      },
-    })
-  );
-//   app.use((req, res, next) => {
-//     res.setHeader(
-//       "Content-Security-Policy",
-//       "default-src 'self'; font-src 'self' https://fonts.gstatic.com;"
-//     );
-//     next();
-//   });
-app.use(helmet({
-    contentSecurityPolicy: {
-        directives: {
-            defaultSrc: ["'self'"],
-            fontSrc: ["'self'", "https://fonts.gstatic.com"],
-            styleSrc: ["'self'", "https://fonts.googleapis.com"],
-            scriptSrc: ["'self'"],
-            imgSrc: ["'self'"],
-            connectSrc: ["'self'"],
-            // Add other directives as needed
-        },
-    },
-}));
+
 app.use("/", indexRouter);
 app.use("/user", userRouter);
-app.listen(port, '0.0.0.0', () => {
+// app.listen(port, '0.0.0.0', () => {
+//     console.log(`Server is running on port ${port}`);
+// });
+app.listen(3000, () => {
     console.log(`Server is running on port ${port}`);
 });

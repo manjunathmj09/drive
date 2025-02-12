@@ -5,7 +5,7 @@ const { getSupabaseWithAuth } = require("../config/supabase.config.js");
 const fileModel = require("../models/files.model.js");
 const authMiddleware = require("../middleware/auth.js");
 
-router.get("/home", authMiddleware, async (req, res) => {
+router.get("/", authMiddleware, async (req, res) => {
   try {
     const userFiles = await fileModel.find({ user: req.user.userId });
 
