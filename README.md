@@ -1,63 +1,107 @@
-# Project Name
+# 📂 Drive 🚀
 
-## Description
-A web application that provides drive-like features, allowing users to store and manage files efficiently.
+A sleek, minimalist **cloud storage solution** built with Express.js, MongoDB, and Supabase for seamless file management. Store, retrieve, and share files with ease! 🌍📂
 
-## Features
-- User authentication (Sign Up, Login, Logout)
-- File upload and download
-- Folder structure for organization
-- File preview support
-- Secure access and permissions
+🔗 **Live Demo:** [Drive](https://my-drive-app.onrender.com)
 
-## Technologies Used
-- **Frontend:** ejs, Tailwind CSS
-- **Backend:** Node.js, Express.js
+---
+
+## 🎯 Features
+
+✅ **User Authentication** – Secure login & registration using JWT. 🔐
+✅ **File Upload & Storage** – Effortlessly upload files via a modern drag-and-drop interface. 📤
+✅ **Download & Delete** – Download and delete files with a simple click. ⏬🗑️
+✅ **Dark Mode** – Because who doesn’t love a sleek dark theme? 🌙
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Express.js, Node.js
 - **Database:** MongoDB
-- **Storage:** Supabase Storage
+- **Storage:** Supabase
+- **Authentication:** JWT (JSON Web Tokens)
+- **Frontend:** EJS, Tailwind CSS, Flowbite
+- **Deployment:** Render
 
-## Installation
+---
+
+## 🚀 Getting Started
 
 ### Prerequisites
-- Node.js and npm installed
-- MongoDB set up
-- Supabase account configured
+Ensure you have **Node.js** and **MongoDB** installed on your system.
 
-### Steps to Run Locally
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/your-username/project-name.git
-   cd project-name
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Set up environment variables in a `.env` file:
-   ```env
-   MONGO_URI=your_mongodb_connection_string
-   SUPABASE_URL=your_supabase_url
-   SUPABASE_ANON_KEY=your_supabase_anon_key
-   JWT_SECRET_KEY=your_secret_key
-   ```
-4. Start the backend server:
-   ```sh
-   npm run dev
-   ```
-5. Open your browser and visit:
-   ```
-   http://localhost:5173
-   ```
+### Installation & Setup
 
-## Usage
-- Sign up or log in to access your drive.
-- Upload files and organize them in folders.
-- Download or preview stored files.
-- Securely manage access to your files.
+1️⃣ Clone the repository:
+```sh
+ git clone https://github.com/manjunathmj09/manjunathmj09-drive.git
+```
 
-## Contributing
-Contributions are welcome! Feel free to fork this repository and submit a pull request.
+2️⃣ Navigate into the project directory:
+```sh
+cd manjunathmj09-drive
+```
 
-## Contact
-For any inquiries, reach out to **contact.manjunath.n@gmail.com**.
+3️⃣ Install dependencies:
+```sh
+npm install
+```
+
+4️⃣ Set up environment variables:
+Create a `.env` file and configure it as needed:
+```sh
+MONGO_URI=your_mongodb_uri
+JWT_SECRET_KEY=your_secret_key
+SUPABASE_URL=your_supabase_url
+SUPABASE_KEY=your_supabase_key
+```
+
+5️⃣ Start the server:
+```sh
+npm start
+```
+
+6️⃣ Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## 🌍 Deployment
+
+This project is deployed on **Render**, making it accessible worldwide. 🌎✨
+
+To deploy manually:
+```sh
+git push render main
+```
+
+---
+
+
+🚀 **Home Page:** Upload and manage files effortlessly.
+
+📂 **File Management:** Download or delete files with a single click.
+
+🌙 **Dark Mode:** Modern UI for a seamless experience.
+
+---
+
+## 🏆 Contributing
+
+Want to make this even better? Feel free to contribute! Fork, make changes, and submit a pull request.
+
+```sh
+git checkout -b feature-branch
+git commit -m "Add new feature"
+git push origin feature-branch
+```
+
+---
+
+## 📞 Contact
+
+💌 **Email:** [contact.manjunath.n@gmail.com](mailto:contact.manjunath.n@gmail.com)
+📌 **GitHub:** [manjunathmj09](https://github.com/manjunathmj09)
+
+🚀 Let’s build something awesome together! 💡🔥
 
