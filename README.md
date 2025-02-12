@@ -8,21 +8,22 @@ A sleek, minimalist **cloud storage solution** built with Express.js, MongoDB, a
 
 ## 🎯 Features
 
-✅ **User Authentication** – Secure login & registration using JWT. 🔐
-✅ **File Upload & Storage** – Effortlessly upload files via a modern drag-and-drop interface. 📤
-✅ **Download & Delete** – Download and delete files with a simple click. ⏬🗑️
-✅ **Dark Mode** – Because who doesn’t love a sleek dark theme? 🌙
+✅ **User Authentication** – Secure login & registration using JWT. 🔐  
+✅ **File Upload & Storage** – Effortlessly upload files via a modern drag-and-drop interface. 📤  
+✅ **Download & Delete** – Download files with a single click. ⏬  
+✅ **File Removal** – Delete unwanted files instantly. 🗑️  
+✅ **Dark Mode** – Because who doesn’t love a sleek dark theme? 🌙  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Backend:** Express.js, Node.js
-- **Database:** MongoDB
-- **Storage:** Supabase
-- **Authentication:** JWT (JSON Web Tokens)
-- **Frontend:** EJS, Tailwind CSS, Flowbite
-- **Deployment:** Render
+- **Backend:** Express.js, Node.js  
+- **Database:** MongoDB  
+- **Storage:** Supabase  
+- **Authentication:** JWT (JSON Web Tokens)  
+- **Frontend:** EJS, Tailwind CSS, Flowbite  
+- **Deployment:** Render  
 
 ---
 
@@ -35,7 +36,7 @@ Ensure you have **Node.js** and **MongoDB** installed on your system.
 
 1️⃣ Clone the repository:
 ```sh
- git clone https://github.com/manjunathmj09/manjunathmj09-drive.git
+git clone https://github.com/manjunathmj09/manjunathmj09-drive.git
 ```
 
 2️⃣ Navigate into the project directory:
@@ -77,12 +78,9 @@ git push render main
 
 ---
 
-
-🚀 **Home Page:** Upload and manage files effortlessly.
-
-📂 **File Management:** Download or delete files with a single click.
-
-🌙 **Dark Mode:** Modern UI for a seamless experience.
+🚀 **Home Page:** Upload and manage files effortlessly.  
+📂 **File Management:** Download or delete files with a single click.  
+🌙 **Dark Mode:** Modern UI for a seamless experience.  
 
 ---
 
@@ -100,8 +98,8 @@ git push origin feature-branch
 
 ## 📞 Contact
 
-💌 **Email:** [contact.manjunath.n@gmail.com](mailto:contact.manjunath.n@gmail.com)
-📌 **GitHub:** [manjunathmj09](https://github.com/manjunathmj09)
+💌 **Email:** [contact.manjunath.n@gmail.com](mailto:contact.manjunath.n@gmail.com)  
+📌 **GitHub:** [manjunathmj09](https://github.com/manjunathmj09)  
 
 🚀 Let’s build something awesome together! 💡🔥
 
